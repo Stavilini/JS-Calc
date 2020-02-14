@@ -1,0 +1,67 @@
+
+.frame {
+	position: relative;
+	width:481px;
+	height:392px;
+	left: 272px;
+	top:31px;
+	background-color: #F7F5F9;
+	border-radius: 12px;
+}
+
+form {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 20px;
+}
+
+
+
+.feedback {
+	position: absolute;
+	left: 40px;
+	top: 30px;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 20px;
+	color: #3B3D43;
+}
+
+.name {
+	top: 85px;
+}
+
+.phone {
+	top: 158px;
+}
+
+.email {
+	top: 231px;
+}
+
+.button {
+	top: 304px;
+	background: #6979F8;
+	color:#ffffff;
+}
+input {
+	box-sizing: content-box;
+	left:40px;
+	position: absolute;
+	width: 386px;
+	height: 48px;
+	background: #FFFFFF;
+	border-radius: 6px;
+}
+input:hover {
+	box-shadow: 0px 7px 64px rgba(0, 0, 0, 0.07);
+	border: 1px solid #854FC8;
+}
+
+input:not(.button) {
+	padding-left: 15px;
+}
