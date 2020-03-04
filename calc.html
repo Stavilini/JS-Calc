@@ -5,26 +5,30 @@
     <meta charset="utf-8">
     <title>calc</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="main.js"></script>
 </head>
 
 <body>
     <div class="container">
         <div class="fix"></div>
-        <input class="size-x sizes" type="text" name="size" placeholder="Размер по ширине" id="sizeX">
-        <input class="size-y sizes" type="text" name="size" placeholder="Размер по высоте" id="sizeY">
-        <input class="amount" type="text" name="amount" placeholder="Количество изделий" id="amount">
-        <label #="material">Материал</label>
-        <select for id="material" name="material" class="material">
-				<option value="film">Пленка ПП</option>
-				<option value="paper">Бумага</option>
-			</select>
-        <label class="color-sel" #="color-selector">Цветность</label>
-        <select for id="color-selector" name="color-sel" class="color-selector">
-				<option value="1+0">Ч/Б</option>
-				<option value="4+0">Цвет</option>
-			</select>
+        <div id="result"></div>
+        <form id="calc">
+            <input class="size-x sizes" type="text" name="size" placeholder="Размер по ширине" id="sizeX">
+            <input class="size-y sizes" type="text" name="size" placeholder="Размер по высоте" id="sizeY">
+            <input class="amount" type="text" name="amount" placeholder="Количество изделий" id="amount">
+            <label #="material">Материал</label>
+            <select for id="material" name="material" class="material">
+                <option value="film">Пленка ПП</option>
+                <option value="paper">Бумага</option>
+            </select>
+            <label class="color-sel" #="color-selector">Цветность</label>
+            <select for id="color-selector" name="color-sel" class="color-selector">
+                <option value="1+0">Ч/Б</option>
+                <option value="4+0">Цвет</option>
+            </select>
+            <button type="submit">Посчитать</button>
+        </form>
     </div>
-
 </body>
 
 </html>
