@@ -1,0 +1,59 @@
+<title>calc</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="fix"></div>
+        <form id="calc" class="form">
+            <div class="textInput">
+                <div class="sizes">
+                <label #="sizeX">Ширина</label>
+                <input class="size-x textField" type="text" name="size" placeholder="Размер в мм" id="sizeX" required>
+            </div>
+                <div class="sizes">    
+                <label #="sizeY">Длина</label>
+                <input class="size-y textField" type="text" name="size" placeholder="Размер в мм" id="sizeY" required>
+            </div>
+            <div class="sizes">    
+                <label #="amount">Количество</label>
+                <input class="amount textField" type="text" name="amount" placeholder="Количество изделий" id="amount" required>
+            </div>
+            </div>
+            <div class="options">
+                <label #="material">Материал:</label>
+                <select for id="material" name="material" class="material option">
+                    <option value="film">Пленка ПП</option>
+                    <option value="paper">Бумага</option>
+                </select>
+                <label #="color-selector">Цветность:</label>
+                <select for id="color-selector" name="color-sel" class="color-selector option">
+                    <option value="1+0">Ч/Б</option>
+                    <option value="4+0">Цвет</option>
+                </select>
+            </div>
+                
+            
+        </form>
+        <input type="button" value="Посчитать" id="count"></button>
+        <div class="resultAll">
+        <div class="resualtAll1">
+            <p class='amountTotal'>Кол-во с листа:  <output name="amount" id='amountPieces'>---</output></p>
+            <p class="bestAmount">Оптимальный тираж, шт:  <output name="bestAmount" id="bestAmount">---</output></p>
+            
+            <p class="pieceCost">Цена за шт:  <output name="pieceCost" id="pieceCost">---</output></p>
+        </div>
+        <div class="resultAll2">
+            <p class='result2'>Количество листов:  <output name='sheets amount' id='sheets'>---</output></p>
+            <p class="extraPieces">Extra штуки:  <output name="extraPieces" id="extraPieces">---</output></p>
+            
+            <p class="result">Сумма:  <output name="result" id="result">---</output></p>
+        </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+
+</html>

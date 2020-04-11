@@ -1,0 +1,75 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Baloo Paaji 2', cursive;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    left: 50px;
+    top: 50px;
+    padding: 20px;
+    display: flex;
+    width: 550px;
+    height: 320px;
+    background: gray;
+    border: 5px solid lightcoral;
+    border-radius: 15px;
+}
+.sizes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+}
+button {
+   width: 20px;
+}
+.options {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 550px;
+    height: auto;
+    margin-bottom: 18px;
+    
+    
+}
+.form {
+    background: lightgrey;
+    border-radius: 8px;
+    padding: 10px;
+}
+.option {
+    margin-left: 10px;
+}
+.material {
+    margin-right: 30px;
+}
+.textInput {
+    display: flex;
+    justify-content: space-around;   
+    position: relative;
+    width: auto;
+    height: 75px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    
+}
+.textField {
+background-color:#c0effc;
+width: auto;
+margin: 5px;
+padding-right: 5px;
+}
+.resultAll {
+    display: flex;
+    justify-content: space-around;
+}
+input {
+    padding: 5px;
+    }
