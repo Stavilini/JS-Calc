@@ -1,6 +1,8 @@
 window.onload = calc;
 var materialPrice = 0;
 var printPrice = 0;
+var shWidth = 320;
+var shHeight = 450;
 
 
 function calc(){
@@ -33,9 +35,10 @@ if (color == 0) {
         printPrice = 75;
 }
 
-var piecesX = Math.floor(450 / sizeX);
-var piecesY = Math.floor(320 / sizeY); 
-var piecesTotal = piecesX * piecesY;
+
+var piecesTotal = Math.max(Math.floor(shWidth/sizeX) * Math.floor(shHeight/sizeY), Math.floor(shWidth/sizeY)*(Math.floor(shHeight/sizeX)));
+
+console.log(piecesTotal);
 var sheetsAmount = Math.ceil(amount / piecesTotal);
 var sum = sheetsAmount * (matherialPrice + printPrice);
 var pieceCostVar = (sum / amount).toFixed(2);
