@@ -1,0 +1,58 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.container {
+    position: relative;
+    left: 50px;
+    top: 50px;
+    padding: 20px;
+    display: flex;
+    width: 550px;
+    height: 500px;
+    background-color: gray;
+    border-radius: 15px;
+}
+.textInput {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: auto;
+    height: auto;
+    margin-bottom: 25px;
+}
+.textField {
+background-color: wheat;
+width: auto;
+margin: 5px;
+}
+.result {
+    position: absolute;
+    top: 180px;
+    left: 50px;
+    width: 250px;
+    height: 20px;
+        
+}
+.result2 {
+    position: absolute;
+    top: 155px;
+    left: 50px;
+    width: 250px;
+    height: 20px;
+}
+.amountTotal {
+    position: absolute;
+    top: 130px;
+    left: 50px;
+    width: 250px;
+    height: 20px;
+}
+.pieceCost {
+    position: absolute;
+    top: 205px;
+    left: 50px;
+    width: 250px;
+    height: 20px;
+}

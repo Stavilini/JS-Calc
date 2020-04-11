@@ -1,0 +1,39 @@
+<title>calc</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+<div class="container">
+    <div class="fix"></div>
+    <form id="calc">
+        <div class="textInput">
+            <input class="size-x textField" type="text" name="size" placeholder="Размер по ширине" id="sizeX">
+            <input class="size-y textField" type="text" name="size" placeholder="Размер по высоте" id="sizeY">
+            <input class="amount textField" type="text" name="amount" placeholder="Количество изделий" id="amount">
+        </div>
+        <label #="material">Материал</label>
+        <select for id="material" name="material" class="material">
+            <option value="film">Пленка ПП</option>
+            <option value="paper">Бумага</option>
+        </select>
+        <label class="color-sel" #="color-selector">Цветность</label>
+        <select for id="color-selector" name="color-sel" class="color-selector">
+            <option value="1+0">Ч/Б</option>
+            <option value="4+0">Цвет</option>
+        </select>
+        <input type="button" value="Посчитать" id="count"></button>
+    </form>
+        <div class="resualtAll">
+            <p class='amountTotal'>Кол-во с листа: <output name="amount" id = 'amountPieces'></output></p>
+            <p class='result2'>Количество листов: <output name = 'sheets amount' id = 'sheets'></output></p>
+            <p class="result">Сумма: <output name="result" id="result"></output></p>
+            <p class="pieceCost">Цена за шт: <output name="pieceCost" id="pieceCost"></output></p>
+        </div>
+</div>
+<script src="main.js"></script>
+</body>
+
+
+</html> 
+
