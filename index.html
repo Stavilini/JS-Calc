@@ -4,13 +4,13 @@
 <head>
 
     <title>calc</title>
+    <link rel="stylesheet" type="text/css" href="reset.css">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@500&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div class="container">
-        <div class="fix"></div>
         <form id="calc" class="form">
             <div class="textInput">
                 <div class="sizes">
@@ -49,13 +49,11 @@
             <div class="resualtAll1">
                 <p class='amountTotal'>Кол-во с листа: <output name="amount" id='amountPieces'>---</output></p>
                 <p class="bestAmount">Оптимальный тираж, шт: <output name="bestAmount" id="bestAmount">---</output></p>
-
                 <p class="pieceCost">Цена за шт: <output name="pieceCost" id="pieceCost">---</output></p>
             </div>
             <div class="resultAll2">
                 <p class='result2'>Количество листов: <output name='sheets amount' id='sheets'>---</output></p>
                 <p class="extraPieces">Extra штуки: <output name="extraPieces" id="extraPieces">---</output></p>
-
                 <p class="result">Сумма: <output name="result" id="result">---</output></p>
             </div>
         </div>

@@ -42,7 +42,14 @@ function calculate() {
         printPrice = 75;
     }
     // Получение наиболее выгодной раскладки и подсчет кол-ва изделий с листа
-    var piecesTotal = Math.max(Math.floor(shWidth / sizeX) * Math.floor(shHeight / sizeY), Math.floor(shWidth / sizeY) * (Math.floor(shHeight / sizeX)));
+    // Первый вариант
+    var variantA = Math.floor(shWidth / sizeX) * Math.floor(shHeight / sizeY);
+    console.log(variantA + " шт В первом случае");
+    // Второй вариант
+    var variantB = Math.floor(shWidth / sizeY) * Math.floor(shHeight / sizeX);
+    console.log(variantB + " шт Во втором случае");
+
+    var piecesTotal = Math.max(variantA , variantB);
     console.log(piecesTotal + " с листа");
     // Кол-во листов
     var sheetsAmount = Math.ceil(amount / piecesTotal);
